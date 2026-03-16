@@ -53,3 +53,4 @@ jobs:
           docker stop connections
           docker rm --force connections
           docker run  -d -p 8080:8080 -e MONGO_URL=${{ secrets.MONGO_URL }} --network=rede --name connections garciapp2/connections-ci:${{ github.sha }}
+
