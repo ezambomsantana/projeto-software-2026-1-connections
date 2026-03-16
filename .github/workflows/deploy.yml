@@ -2,12 +2,17 @@ name: Deploy automatico
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
+
+env:
+  DOCKER_IMAGE: ezambomsantana/connections-ci
+  CONTAINER_NAME: conexoes
+  DOCKER_USER: ezambomsantana
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
+
     permissions:
       contents: write
       pull-requests: write
