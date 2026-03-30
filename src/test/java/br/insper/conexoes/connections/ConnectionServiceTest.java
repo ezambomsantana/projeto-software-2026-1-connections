@@ -51,6 +51,14 @@ class ConnectionServiceTest {
     }
 
     // createShouldThrowNotFoundWhenFromUserDoesNotExist
+    // @Test
+    // void create_shouldThrowNotFoundWhenFromUserDoesNotExist(){
+
+
+    //     // mock
+    //     String fromUserId = "user1";
+    // }
+
     // createShouldThrowNotFoundWhenToUserDoesNotExist
     // listByUserShouldReturnConnectionsAndSendEvent
     // deleteShouldSendEventAndRemoveConnection
